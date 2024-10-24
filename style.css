@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: black;
+}
+
+.titulo-principal,
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    text-align: center;
+}
+
+.titulo-principal {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    position: relative;
+    margin-top: 86px;
+}
+
+
+.sub-titulo {
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+.titulo-principal span {
+    position: relative;
+}
+
+.titulo-principal span:nth-of-type(1) {
+    transform: rotate(-14deg);
+}
+
+.titulo-principal span:nth-of-type(2) {
+
+    transform: rotate(-8deg);
+    top: -24px;
+
+}
+
+.titulo-principal span:nth-of-type(3) {
+
+    transform: rotate(-6deg);
+    top: -36px;
+
+}
+
+.titulo-principal span:nth-of-type(4) {
+
+    transform: rotate(0deg);
+    top: -40px;
+
+}
+
+.titulo-principal span:nth-of-type(5) {
+
+    transform: rotate(6deg);
+    top: -36px;
+
+}
+
+.titulo-principal span:nth-of-type(6) {
+
+    transform: rotate(12deg);
+    top: -24px;
+
+}
+
+.titulo-principal span:nth-of-type(7) {
+    transform: rotate(14deg);
+}
+
+
+
+div:has(>#botaoClaro) {
+    display: flex;
+    justify-content: center;
+}
+
+#botaoClaro {
+    border-radius: 4px;
+}
+
+
+
+
+@media(min-width: 768px) {
+
+
+    .titulo-principal {
+        font-size: 180px;
+
+    }
+
+
+    .sub-titulo {
+        font-size: 120px;
+    }
+
+    div:has(>#botaoClaro) {
+        /* has e usado para selecionar um elemento atraves de uma condição*/
+        justify-content: flex-end;
+        /* forma certa de colacar um botaõ a direta ou a esqueda da pagina.*/
+
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+
+
+}
